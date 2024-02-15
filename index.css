@@ -79,7 +79,7 @@ header{
     text-align: center; 
     background-color: none;
     justify-content: center;
-    cursor:pointer;
+    cursor: pointer;
     /*box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;*/
 }
 .icon button{
@@ -92,7 +92,6 @@ header{
     justify-content: center;
     font-size: 20px;
     color: rgb(255, 255, 255);
-	    cursor:pointer;
     /*border: 3px solid rgb(255, 255, 255);
     border-radius: 50px;*/
 }
@@ -103,7 +102,6 @@ header{
     background-color: none;
     text-align: center; 
     justify-content: center;
-	    cursor:pointer;
     /*box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;*/
 }
 .profile button{
@@ -114,7 +112,6 @@ header{
     background-color: none;
     outline: none;
     border: none;
-	    cursor:pointer;
     /*border: 3px solid rgb(255, 255, 255);*/
     text-align: center; 
     justify-content: center;
@@ -127,7 +124,6 @@ header{
     height: 45px;
     border-radius: 50px;
     border: 3px solid rgb(255, 255, 255);
-	    cursor:pointer;
 }
 footer{
     position: fixed;
@@ -395,10 +391,10 @@ footer{
 
 
   .modal{
-  display: block; /* Hidden by default */
+  display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
- /* Location of the box */
+  /* Location of the box */
   left: 0;
   justify-content: center;
   top: 0;
@@ -412,7 +408,8 @@ footer{
 
   .modal-content, #caption { 
     animation-name: zoom;
-    animation-duration: 0.6s;
+    animation-duration:0.5s;
+    animation-iteration-count: 1; /* stop at the last keyframe */
   }
   
   @keyframes zoom {
@@ -425,13 +422,33 @@ footer{
     width: 94%;
     margin: auto;
     border-radius: 20px;
-    padding: 10px;
     top: 100px;
     margin-left: 3%;
+    position: absolute;
+    background-size: 400% 400%;
+	  animation: gradient 15s ease infinite;
+  }
+  .modal-main{
+    background: linear-gradient(125deg, blue, rgb(0, 119, 255), rgb(0, 110, 255), rgb(0, 30, 255));
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    border-radius: 20px;
     position: absolute;
     border: 3px solid white;
     background-size: 400% 400%;
 	  animation: gradient 15s ease infinite;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
   
   .close{
@@ -441,63 +458,14 @@ footer{
     color: white;
   }
   .close button{
-    color: rgb(242, 0, 255);
+    color: rgb(255, 0, 247);
     border-radius: 20px;
     border: none;
     font-size: 25px;
     background: none;
   }
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+  .profile{
+    
+  }
 
 
