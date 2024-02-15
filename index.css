@@ -406,11 +406,11 @@ footer{
   background-color: rgba(0, 0, 0, 0.862); /* Black w/ opacity */
   }
 
-  .modal-content, #caption { 
+  /*.modal-content, #caption { 
     animation-name: zoom;
     animation-duration:0.5s;
-    animation-iteration-count: 1; /* stop at the last keyframe */
-  }
+    animation-iteration-count: 1; /* stop at the last keyframe 
+  }*/
   
   @keyframes zoom {
     from {transform:scale(0)} 
