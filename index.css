@@ -406,11 +406,11 @@ footer{
   background-color: rgba(0, 0, 0, 0.862); /* Black w/ opacity */
   }
 
-  /*.modal-content, #caption { 
+  .modal-content, #caption { 
     animation-name: zoom;
     animation-duration:0.5s;
     animation-iteration-count: 1; /* stop at the last keyframe 
-  }*/
+  }
   
   @keyframes zoom {
     from {transform:scale(0)} 
@@ -426,7 +426,7 @@ footer{
     margin-left: 3%;
     position: absolute;
     background-size: 400% 400%;
-	  animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
   }
   .modal-main{
     background: linear-gradient(125deg, blue, rgb(0, 119, 255), rgb(0, 110, 255), rgb(0, 30, 255));
