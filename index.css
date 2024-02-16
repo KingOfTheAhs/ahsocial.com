@@ -409,7 +409,7 @@ footer{
   .modal-content, #caption { 
     animation-name: zoom;
     animation-duration:0.5s;
-    animation-iteration-count: 1; /* stop at the last keyframe 
+    animation-iteration-count: 1; /* stop at the last keyframe */
   }
   
   @keyframes zoom {
