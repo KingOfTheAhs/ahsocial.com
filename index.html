@@ -123,66 +123,66 @@
       </div>
 
 
-     <div class="sep"></div>
-
-      <div class="title"><h1>Friend Updates</h1></div>
-      <div class="friends">
-
-        <div class="friend">
-           <img src="male2.jpg" alt="">
-           <div class="friend-name">
-            <h1>Chris Hemsworth</h1>
-            <h2>Offline </h2>
-           </div>
-        </div>
-
-        <div class="friend">
-          <img src="male3.jpg" alt="">
-          <div class="friend-name">
-           <h1>Chris Hemsworth</h1>
-           <h2>Offline </h2>
-          </div>
-       </div>
-
-      
-       <div class="friend">
-        <img src="femal (1).jpg" alt="">
-        <div class="friend-name">
-         <h1>Chris Hemsworth</h1>
-         <h2>Offline </h2>
-        </div>
-     </div>
-
      
-     <div class="friend">
-      <img src="femal (2).jpg" alt="">
-      <div class="friend-name">
-       <h1>Chris Hemsworth</h1>
-       <h2>Offline </h2>
-      </div>
-   </div>
+      
 
-   
-   <div class="friend">
-    <img src="femal (3).jpg" alt="">
-    <div class="friend-name">
-     <h1>Chris Hemsworth</h1>
-     <h2>Offline </h2>
-    </div>
- </div>
-
- 
- <div class="friend">
-  <img src="femal (4).jpg" alt="">
-  <div class="friend-name">
-   <h1>Chris Hemsworth</h1>
-   <h2>Offline </h2>
+     <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'friends')"><i class="fa-solid fa-user-group"></i></button>
+      <button class="tablinks" onclick="openTab(event, 'notifications')"><i class="fa-solid fa-bell"></i></button>
+      <button class="tablinks" onclick="openTab(event, 'subscriptions')"><i class="fa-solid fa-image"></i></button>
+      <button class="tablinks" onclick="openTab(event, 'posts')"><i class="fa-solid fa-pen"></i></button>
+      <button class="tablinks" onclick="openTab(event, 'posts')"><i class="fa-solid fa-users-line"></i></button>
+      
   </div>
+  <div class="sep"></div>
+  <div id="friends" class="tabcontent">
+    <iframe width="275" height="175" src="https://www.youtube-nocookie.com/embed/wrHTcjSZQ1Y?si=SY7DcPqBZe5fLQ7z&amp;start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+  <div id="notifications" class="tabcontent">
+      <!-- Content for the Notifications tab -->
+      <h3>Notifications Content</h3>
+      <p>Your notifications appear here.</p>
+  </div>
+
+  <div id="subscriptions" class="tabcontent">
+      <!-- Content for the Subscriptions tab -->
+      <h3>Subscriptions Content</h3>
+      <p>Your subscribed channels or content go here.</p>
+  </div>
+
+  <div id="posts" class="tabcontent">
+    <!-- Content for the Subscriptions tab -->
+    <h3>Posts Content</h3>
+    <p>Your subscribed channels or content go here.</p>
 </div>
-        
 
 
-      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -208,7 +208,7 @@
   </div>
   </div>
 
-  <script>
+<script>
     function openNav() {
       document.getElementById("myNav").style.height = "90%";
     }
@@ -224,12 +224,10 @@
     function closePost() {
       document.getElementById("postB").style.display = "none";
     }
-    </script>
+</script>
 
 
-
-
-    <script>
+<script>
   // Get the modal
   var modal = document.getElementById("myModal");
   
@@ -255,7 +253,7 @@
       modal.style.display = "none";
     }
   }
-  </script>
+</script>
 
 
 <script>
@@ -294,4 +292,28 @@
 		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
 	}
 	// ]]>
+</script>
+
+
+<script>
+  // script.js
+function openTab(evt, tabName) {
+    const tabcontent = document.getElementsByClassName('tabcontent');
+    for (let i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = 'none';
+    }
+
+    const tablinks = document.getElementsByClassName('tablinks');
+    for (let i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove('active');
+    }
+
+    document.getElementById(tabName).style.display = 'block';
+    evt.currentTarget.classList.add('active');
+}
+
+// Show the default tab on page load
+document.getElementById('friends').style.display = 'block';
+document.querySelector('.tablinks').classList.add('active');
+
 </script>
