@@ -33,6 +33,28 @@
 
 
 <div class="center">
+  <div class="tabs2">
+    <button class="tab-button2" onclick="openTab2(event, 'feed')">Feed</button>
+    <button class="tab-button2" onclick="openTab2(event, 'videos')">Videos</button>
+    <button class="tab-button2" onclick="openTab2(event, 'images')">Images</button>
+
+    
+</div>
+
+<div id="feed" class="tab-content2">
+    <h3>FEED</h3>
+    <p>Your friends' updates go here.</p>
+</div>
+
+<div id="videos" class="tab-content2">
+    <h3>Notifications Content</h3>
+    <p>Your notifications appear here.</p>
+</div>
+
+<div id="images" class="tab-content2">
+    <h3>Subscriptions Content</h3>
+    <p>Your subscribed channels or content go here.</p>
+</div>
 
  
 </div> 
@@ -92,7 +114,7 @@
 
 
     </div>
-  </div>
+</div>
 
 
 
@@ -126,7 +148,7 @@
      
       
 
-     <div class="tab">
+  <div class="tab">
       <button class="tablinks" onclick="openTab(event, 'friends')"><i class="fa-solid fa-user-group"></i></button>
       <button class="tablinks" onclick="openTab(event, 'notifications')"><i class="fa-solid fa-bell"></i></button>
       <button class="tablinks" onclick="openTab(event, 'subscriptions')"><i class="fa-solid fa-image"></i></button>
@@ -134,9 +156,144 @@
       <button class="tablinks" onclick="openTab(event, 'posts')"><i class="fa-solid fa-users-line"></i></button>
       
   </div>
-  <div class="sep"></div>
+
   <div id="friends" class="tabcontent">
-    <iframe width="275" height="175" src="https://www.youtube-nocookie.com/embed/wrHTcjSZQ1Y?si=SY7DcPqBZe5fLQ7z&amp;start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; audio; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+   <!-- <div class="title">
+      <p>See What Your Friends Are Up To!😁❤️</p>
+    </div>
+  -->
+
+<div class="update-con">
+  <div class="update">
+    <div class="topper">
+    <div class="name-tab">
+      <img src="napolean.png" alt="">
+      <h2>@Jimmy40</h2>
+    </div>
+    <div class="action">
+      <p>Posted</p>
+    </div>
+    </div>
+  </div>
+    <div class="post">
+      
+      <div class="user">
+      
+      </div>
+    </div>
+
+    <!--<div class="clear">
+      <button>&times;</button>
+    </div>-->
+</div>
+
+
+<div class="update-con">
+  <div class="update">
+    <div class="topper">
+    <div class="name-tab">
+      <img src="napolean.png" alt="">
+      <h2>@Jimmy40</h2>
+    </div>
+    <div class="action">
+      <p>Posted</p>
+    </div>
+    </div>
+  </div>
+    <div class="post">
+      
+      <div class="user">
+      
+      </div>
+    </div>
+
+    <!--<div class="clear">
+      <button>&times;</button>
+    </div>-->
+</div>
+
+
+<div class="update-con">
+  <div class="update">
+    <div class="topper">
+    <div class="name-tab">
+      <img src="napolean.png" alt="">
+      <h2>@Jimmy40</h2>
+    </div>
+    <div class="actionM">
+      <p>Messaged</p>
+    </div>
+    </div>
+  </div>
+    <div class="post">
+      
+      <div class="user">
+      
+      </div>
+    </div>
+
+    <!--<div class="clear">
+      <button>&times;</button>
+    </div>-->
+</div>
+
+
+<div class="update-con">
+  <div class="update">
+    <div class="topper">
+    <div class="name-tab">
+      <img src="napolean.png" alt="">
+      <h2>@Jimmy40</h2>
+    </div>
+    <div class="action">
+      <p>Posted</p>
+    </div>
+    </div>
+  </div>
+    <div class="post">
+      
+      <div class="user">
+      
+      </div>
+    </div>
+
+    <!--<div class="clear">
+      <button>&times;</button>
+    </div>-->
+</div>
+
+
+<div class="update-con">
+  <div class="update">
+    <div class="topper">
+    <div class="name-tab">
+      <img src="napolean.png" alt="">
+      <h2>@Jimmy40</h2>
+    </div>
+    <div class="action">
+      <p>Posted</p>
+    </div>
+    </div>
+  </div>
+    <div class="post">
+      
+      <div class="user">
+      
+      </div>
+    </div>
+
+    <!--<div class="clear">
+      <button>&times;</button>
+    </div>-->
+</div>
+
+
+
+
+
+
+
   </div>
 
   <div id="notifications" class="tabcontent">
@@ -208,7 +365,7 @@
   </div>
   </div>
 
-<script>
+<script name="Overlay menu">
     function openNav() {
       document.getElementById("myNav").style.height = "90%";
     }
@@ -227,7 +384,7 @@
 </script>
 
 
-<script>
+<script name="pro">
   // Get the modal
   var modal = document.getElementById("myModal");
   
@@ -256,7 +413,7 @@
 </script>
 
 
-<script>
+<script name="Refresh">
 	// <![CDATA[  <-- For SVG support
 	if ('WebSocket' in window) {
 		(function () {
@@ -295,7 +452,7 @@
 </script>
 
 
-<script>
+<script name="Tab1">
   // script.js
 function openTab(evt, tabName) {
     const tabcontent = document.getElementsByClassName('tabcontent');
@@ -317,3 +474,29 @@ document.getElementById('friends').style.display = 'block';
 document.querySelector('.tablinks').classList.add('active');
 
 </script>
+
+<script name="Tabs2">
+  // script.js
+function openTab2(evt2, tabName2) {
+    const tabContents2 = document.querySelectorAll('.tab-content2');
+    tabContents2.forEach((content) => {
+        content.style.display = 'none';
+    });
+
+    const tabButtons2 = document.querySelectorAll('.tab-button2');
+    tabButtons2.forEach((button) => {
+        button.classList.remove('active2');
+    });
+
+    document.getElementById(tabName2).style.display = 'block';
+    evt2.currentTarget.classList.add('active2');
+}
+
+// Show the default tab on page load
+document.getElementById('friends2').style.display = 'block';
+document.querySelector('.tab-button2').classList.add('active');
+
+</script>
+
+</body>
+</html>
