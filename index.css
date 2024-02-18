@@ -73,8 +73,8 @@ margin-left: 5%;
   justify-content: center;
 }
 .tab-content2 iframe{
-  width: 100%;
-  height:275px;
+  width: 1020%;
+  height:300px;
   margin: auto;
   border-radius: 10px;
   border: 3px solid rgb(0, 170, 255);
