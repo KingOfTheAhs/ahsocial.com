@@ -24,8 +24,69 @@ body::-webkit-scrollbar{
 }
 .center iframe{
 margin-left: 5%;
-
 }
+/* styles.css */
+.tabs2 {
+  display: flex;
+  width: auto;
+  overflow-x: scroll;
+  height: 40px;
+}
+.tabs2::-webkit-scrollbar{
+  display: none;
+}
+
+.tab-button2 {
+  background: linear-gradient(135deg, blue, rgb(0, 217, 255));
+  border: 1px solid black;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  margin-right: 10px;
+  padding: 0px 14px 0px 14px;
+  height: 30px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  font-size: 16px;
+}
+ .active2{
+  background: none;
+  background-color: #000000;
+  border: 3px solid rgb(0, 170, 255);
+  transition: all 0.5s ease;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.tab-button2:hover {
+ background-color: white;
+ color: rgb(0, 170, 255);
+}
+
+.tab-content2 {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 header{
     position: fixed;
     top: 0;
@@ -252,7 +313,7 @@ footer{
 
 
   .modal{
-  display: block; /* Hidden by default */
+  display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   /* Location of the box */
@@ -281,11 +342,11 @@ footer{
     border: 5px solid rgb(0, 170, 255);
     background-color: hsl(0, 0%, 100%);
     /*background: linear-gradient(125deg, blue, rgb(0, 119, 255), rgb(0, 187, 255), rgb(0, 136, 255));*/
-    height: 70%;
+    height: 95%;
     width: 94%;
     margin: auto;
     border-radius: 20px;
-    top: 100px;
+    top: 10px;
     margin-left: 3%;
     position: absolute;
     background-size: 400% 400%;
@@ -324,16 +385,20 @@ footer{
   
   .close{
     position: absolute; 
-    right: 10px;
-    top:-90px;
+    right:-14px;
+    top:-10px;
     color: rgb(0, 0, 0);
   }
   .close button{
-    color: rgb(0, 0, 0);
-    border-radius: 20px;
-    border: none;
-    font-size: 25px;
-    background: none; 
+    color: rgb(0, 125, 214);
+    border-radius: 50px;
+    border: 2px solid black;
+    font-size: 17px;
+    background: white; 
+    align-items: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
   }
   .profile-mod{
   width: 100%;
@@ -348,7 +413,7 @@ footer{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10px;
+  padding: 8px;
   }
   .profile-mod:hover{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -372,6 +437,8 @@ footer{
   margin:  auto 0;
   color: rgb(255, 255, 255);
   padding: 5px;
+
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .name h1{
   font-size: 20px;
@@ -467,6 +534,7 @@ display: none;
   overflow: hidden;
   justify-content: space-between;
   display: flex;
+  padding: 5px;
 }
 .tablinks{
   background: rgb(0, 0, 0);
@@ -475,29 +543,172 @@ display: none;
   font-size: 17px;
   background-color: none;
   color: rgb(0, 170, 255);
-  float: left;
-  border: none;
   outline: none;
   cursor: pointer;
-  width: 100px;
+  width: 55px;
   height: 30px;
   transition: all 0.3s ease;
   border-radius: 10px;
-  margin: 0px 2px 3px;
 }
 .active{
   background-color: white;
+  border: 3px solid black;
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.tabcontent {
+  margin-top: 0px;
+  display: none;
+  background-color: none;
+  color: rgb(0, 0, 0);
+  border: 3px solid rgb(0, 170, 255);
+  height: 80%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  min-height: 200px;
+  border: none;
+}
+.tabcontent::-webkit-scrollbar{
+  display: none;
+}
+.tabcontent .title{
+  border-bottom: 3px solid rgb(0, 0, 0);
+  font-size: 16px; 
+  text-align:start ;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  background:linear-gradient(135deg, blue, rgb(0, 191, 255));
+
+  box-shadow: rgba(0, 0, 0) 0px 4px 4px;
+}
+
+.update-con{
+  scroll-snap-align: start;
+  margin-top: 20px;
+  background-color: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 10px;
+  overflow: visible;
+}
+
+.clear button{
+width: 30px;
+height: 30px;
+font-size: 25px;
+border-radius: 20px;
+z-index: 1;
+margin: 2px;
+}
+.heart button{
+  width: 30px;
+height: 30px;
+font-size: 25px;
+border-radius: 20px;
+z-index: 1;
+margin: 2px;
+}
+.update{
+  font-size: 19px;
+  color: #000000;
+}
+.update img{
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  border: 3px solid rgb(0, 170, 255);
+}
+.topper{
+  display: flex;
+}
+.name-tab{
+  display: flex;
+  color: rgb(0, 170, 255);
+  text-align: start;
+  justify-content: start;
+  background-color: rgb(255, 255, 255);
+  width:200px;
+  border-radius: 5px 5px 5px 0px;
+  padding: 5px;
+}
+.name-tab h2{
+margin: auto 8px;
+font-size: 19px;
+text-decoration: underline;
+overflow-x: scroll;
+white-space: nowrap;
+
+}
+.name-tab h2::-webkit-scrollbar{
+  display: none;
+}
+.action{
+  color: rgb(0, 255, 102);
+  margin-left: 12px;
+  background-color: rgb(38, 0, 255);
+  border: 3px solid black;
+  margin-top: -20px;
+  border-radius:5px ;
+  font-weight: 700;
+  padding: 8px 0px 0px 0px;
+  width: 35%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height:44px ;
+  overflow-x:scroll ;
+  white-space: nowrap;
+}
+.actionM{
+  color: rgb(0, 149, 255);
+  margin-left: 12px;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid black;
+  margin-top: -20px;
+  border-radius:5px ;
+  font-weight: 700;
+  padding: 8px 0px 0px 0px;
+  width: 35%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height:44px ;
+  overflow-x:scroll ;
+  white-space: nowrap;
+}
+.action p{
+  margin: auto 0;
+}
+.action::-webkit-scrollbar{
+  display: none;
+}
+.post{
+  border: 3px solid white;
+  width: 100%;
+  height: 100px;
+  background:linear-gradient(135deg, blue, rgb(0, 191, 255));
+  border-radius: 0px 20px 20px 20px;
+
 }
 
 
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ff0000;
-  border-top: none;
-  background-color: black;
-  color: white;
-  border-radius:0 0 15px 15px;
-  border: 3px solid rgb(0, 170, 255);
-  height: auto;
-} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tabcontent iframe{
+width: 100%;
+height: 200px;
+max-width: 500px;
+
+}
