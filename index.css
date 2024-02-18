@@ -36,7 +36,7 @@ margin-left: 5%;
   display: none;
 }
 
-.tab-button2 {
+.tab-button {
   background: linear-gradient(135deg, blue, rgb(0, 217, 255));
   border: 1px solid black;
   outline: none;
@@ -51,22 +51,33 @@ margin-left: 5%;
 }
  .active2{
   background: none;
-  background-color: #000000;
+  background-color: white;
   border: 3px solid rgb(0, 170, 255);
+  color:rgb(0, 170, 255) ;
   transition: all 0.5s ease;
-  border-radius: 50px;
+  border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.tab-button2:hover {
- background-color: white;
- color: rgb(0, 170, 255);
-}
+.tab-button:hover {
+ background: linear-gradient(135deg, rgb(200, 0, 255),rgb(47, 0, 255), rgb(230, 0, 255) );
+ color: rgb(255, 255, 255);
+ 
 
+}
 .tab-content2 {
   display: none;
-  padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px none #ccc;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+.tab-content2 iframe{
+  width: 100%;
+  height: 175px;
+  margin: auto;
+  border-radius: 10px;
+  border: 3px solid rgb(0, 170, 255);
 }
 
 
@@ -399,6 +410,8 @@ footer{
     text-align: center;
     width: 40px;
     height: 40px;
+    padding-bottom: 10px;
+
   }
   .profile-mod{
   width: 100%;
