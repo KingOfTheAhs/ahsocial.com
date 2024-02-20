@@ -14,6 +14,15 @@ body{
 body::-webkit-scrollbar{
     display: none;
 }
+.center::-webkit-scrollbar{
+  display: none;
+}
+.tab2::-webkit-scrollbar{
+display: none;
+}
+.tab-content2::-webkit-scrollbar{
+  display: none;
+}
 .center{
   justify-content: center;
   width: 100%;
@@ -96,30 +105,30 @@ body::-webkit-scrollbar{
   display: flex;
   background-color: #ffffff;
   color: white;
-  border: 3px none rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
   border-radius:10px 10px 0 0;
   width: 100%;
   justify-content: space-evenly;
   overflow: hidden;
   height: 60px;
   border-bottom: 3px solid black;
- 
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-
+  
 }
 .username{
 background-color: rgb(255, 255, 255);
-width: 60%;
+width: 72%;
 text-align: start;
 color: black;
 margin: auto 0;
 }
 .user button{
   width: 40px;
-  font-size: 20px;
+  font-size: 30px;
+  position: relative;
   background-color: none;
   background: none;
-  border: none;
+  border: 1px none black;
   color: rgb(0, 170,255);
 }
 .username h1{
@@ -159,7 +168,7 @@ margin: auto 0;
   color: rgb(0, 170, 255);
   padding: 10px 3px;
   text-align: start;
-  border: 3px solid rgb(0, 68, 255);
+  border: 3px solid rgb(0, 170, 255);
   border-radius: 0px;
   margin-top: -3px;
   border-left: none;
@@ -175,8 +184,8 @@ margin: auto 0;
   background-color: rgb(255, 255, 255);
   border-bottom: 3px solid rgb(0, 170, 255);
   border-top: 3px solid rgb(0, 170, 255);
-  justify-content: start;
-  padding: 5px 0px 5px 10px;
+  justify-content: space-between;
+  padding: 5px 5px 5px 5px;
 }
 .icon-set button{
 font-size: 20px;
@@ -185,15 +194,43 @@ background: none;
 outline: none;
 color: rgb(0, 170, 255);
 border: none;
-margin: 0px 20px 0px 0px;
 transition: all 0.3s ease;
 }
-.icon-set button:last-child{
-margin-left: 20px;
+ .info button span{
+  display: flex;
+  background-color: #000000;
 }
+.right{
+margin-left: 0px;
+background-color: none;
+display: none;
+}
+.right button{
+  padding: none;
+  margin: 0px 0px 0px 25px;
+}
+.left{
+display: flex;
+background-color: none;
+width: 100%;
+justify-content: space-between;
+}
+.left button span{
+  margin: 0px 25px 0px 0px;
+  display: flex;
+}
+.left .info span{
+  color:white;
+  background-color:blue;
+  border-radius: 10px;
+  margin-left: 10px;
+  padding: 3px;
+}
+
 .heart-icon {
   cursor: pointer;
 }
+
 .heart-icon.active {
   color: red; 
   transition: all 0.3s ease;
@@ -203,20 +240,22 @@ margin-left: 20px;
   background: none;
   box-shadow: none;
 }
-.like-break {
-  font-size: 20px;
+.comment-icon{
   cursor: pointer;
 }
-.like-break.active {
-  color: red; 
-  transition: all 0.3s ease-in;
+.comment-active{
+  color:rgb(17, 0, 255); 
+  transition: all 0.3s ease;
   border: none;
   outline: none;
   background-color: none;
   background: none;
   box-shadow: none;
 }
-#comment-input{
+.comment-field{
+  background-color: #000000;
+}
+.comment-input{
   transform: all 0.3s ease;
   width: 100%;
   margin: 10px;
@@ -255,6 +294,7 @@ header{
     justify-content: space-between;
     display: flex;
     animation: color 10s ease-in-out infinite;
+    z-index: 1;
     /*border-bottom: 3px solid black;*/
     border-bottom: 2px solid rgb(0, 0, 0) ;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
