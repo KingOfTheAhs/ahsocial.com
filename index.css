@@ -83,37 +83,137 @@ margin-left: 5%;
   border: 3px solid rgb(0, 0, 0);
   border-radius: 25px;
   width: 100%;
-  padding: 0;
+  padding:0;
   height: auto;
-  padding-bottom:14px ;
+  overflow: hidden;
   margin-top: 20px;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .user{
   display: flex;
-  background-color: #000000;
+  background-color: #ffffff;
   color: white;
   border: 3px none rgb(255, 255, 255);
   border-radius:23px 23px 0 0;
   width: 100%;
+  justify-content: space-evenly;
+  overflow: hidden;
+  height: 60px;
+  border-bottom: 3px solid black;
 }
 .username{
+background-color: rgb(255, 255, 255);
+width: 60%;
+text-align: start;
+color: black;
+margin: auto 0;
+}
+.user button{
+  width: 40px;
+  font-size: 20px;
+  background-color: none;
+  background: none;
+  border: none;
+  color: rgb(0, 170,255);
+}
+.username h1{
+  font-size: 20px;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.username h1 span{
+  color: rgb(0, 170, 255);
+  margin-left: 10px;
 
+}
+.username a{
+  font-size: 12px;
+  font-weight: 700;
+  font-style: italic;
+  overflow-x: scroll;
+  white-space: nowrap;
+  color: rgb(0, 170, 255);
+}
+.username h1::-webkit-scrollbar{
+  display: none;
+}
+.username a::-webkit-scrollbar{
+  display: none;
 }
 .user img{
   width: 45px;
   height: 45px;
   border-radius:50px;
-  margin-left: 5px;
+  margin-left: 0px;
   border: 3px solid rgb(0, 170, 255);
   margin: auto 0;
 }
-.postin img{
-  width: 100%;  
-  max-height: 500px;
-}
+.post-text{
+  background-color: rgb(0, 0, 0);
+  color: rgb(0, 170,255);
+  padding: 10px 3px;
+  text-align: start;
+  border: 3px solid rgb(0, 170, 255);
+  border-radius: 0px;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  margin-top: -4px;
 
+}
+.postin img{
+  width: 100%;
+  max-height: 400px;
+}
+.icon-set{
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  border-top:3px solid black;
+  border-bottom: 3px none black;
+  justify-content: start;
+  padding: 10px 0px 0px 15px;
+}
+.icon-set button{
+font-size: 20px;
+background-color: none;
+background: none;
+outline: none;
+color: rgb(0, 170, 255);
+border: none;
+margin: 0px 20px 0px 0px;
+}
+.icon-set button:last-child{
+margin-left: 20px;
+}
+.heart-icon {
+  cursor: pointer;
+}
+.heart-icon.active {
+  color: red; 
+  transition: all 0.3s ease-in;
+  border: none;
+  outline: none;
+  background-color: none;
+  background: none;
+  box-shadow: none;
+}
+.like-break {
+  font-size: 20px;
+  cursor: pointer;
+}
+.like-break.active {
+  color: red; 
+  transition: all 0.3s ease-in;
+  border: none;
+  outline: none;
+  background-color: none;
+  background: none;
+  box-shadow: none;
+}
+.comment{
+
+}
 
  
 
