@@ -59,7 +59,7 @@
 
 
         <div class="postin">
-       <img src="people/musk.png" alt="">
+       <img src="people/default.png" alt="">
         </div>
 
         <div class="post-text">
@@ -69,13 +69,16 @@
 
         <div class="icon-set">
          
-          <button><div class="heart-icon"><i class="fa-regular fa-heart"></i></div></button>
-          <button><div class="comment"><i class="fa-regular fa-comment-dots"></i></div></button>
+          <button><div class="heart-icon" id="heart-icon"><i class="fa-regular fa-heart"></i></div></button>
+          <button><div class="comment" id="comment"><i class="fa-regular fa-comment-dots"></i></div></button>
           <button><i class="fa-solid fa-share-from-square"></i></button>
           <button type=""><i class="fa-solid fa-download"></i></button>
           <button type="">😄</button>
         </div>
 
+        <div class="comment-field">
+          <input type="text" name="" id="comment-input">
+        </div>
     
 
 
@@ -99,7 +102,7 @@
 
 
         <div class="postin">
-       <img src="people/musk.png" alt="">
+       <img src="people/default-pic.jpg" alt="">
         </div>
 
         <div class="post-text">
@@ -109,13 +112,16 @@
 
         <div class="icon-set">
          
-          <button><div class="heart-icon"><i class="fa-regular fa-heart"></i></div></button>
-          <button><div class="comment"><i class="fa-regular fa-comment-dots"></i></div></button>
+          <button><div class="heart-icon" id="heart-icon"><i class="fa-regular fa-heart"></i></div></button>
+          <button><div class="comment" id="comment"><i class="fa-regular fa-comment-dots"></i></div></button>
           <button><i class="fa-solid fa-share-from-square"></i></button>
           <button type=""><i class="fa-solid fa-download"></i></button>
           <button type="">😄</button>
         </div>
 
+        <div class="comment-field">
+          <input type="text" name="" id="comment-input">
+        </div>
     
 
 
@@ -135,7 +141,13 @@
         <button><i class="fa-solid fa-list-ul fa-rotate-180"></i></button>
     </div>
 
-  
+   
+
+
+        <div class="postin">
+       <img src="people/video.png" alt="">
+        </div>
+
         <div class="post-text">
           <p>I'm not crazy you are 🤔💭
           </p>
@@ -143,13 +155,16 @@
 
         <div class="icon-set">
          
-          <button><div class="heart-icon"><i class="fa-regular fa-heart"></i></div></button>
-          <button><div class="comment"><i class="fa-regular fa-comment-dots"></i></div></button>
+          <button><div class="heart-icon" id="heart-icon"><i class="fa-regular fa-heart"></i></div></button>
+          <button><div class="comment" id="comment"><i class="fa-regular fa-comment-dots"></i></div></button>
           <button><i class="fa-solid fa-share-from-square"></i></button>
           <button type=""><i class="fa-solid fa-download"></i></button>
           <button type="">😄</button>
         </div>
 
+        <div class="comment-field">
+          <input type="text" name="" id="comment-input">
+        </div>
     
 
 
@@ -159,11 +174,12 @@
 
 
 
+
     
 
 
     
-    </div>
+</div>
 
 
 
@@ -227,6 +243,31 @@
 
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div id="videos" class="tab-content2">
  
@@ -682,7 +723,7 @@ document.querySelector('.tab-button').classList.add('active2');
 
 <script>// script.js
   // script.js
-const heartIcon1 = document.querySelector('.heart-icon');
+/*const heartIcon1 = document.getElementById('heart-icon');
 
 heartIcon1.addEventListener('click', () => {
     heartIcon1.classList.toggle('active');
@@ -692,9 +733,40 @@ heartIcon1.addEventListener('click', () => {
     } else {
         icon.className = 'far fa-heart'; // Switch back to outlined heart
     }
+});*/
+
+// script.js
+
+// script.js
+// script.js
+const heartIcons = document.querySelectorAll('.heart-icon');
+
+heartIcons.forEach((heartIcon) => {
+    heartIcon.addEventListener('click', () => {
+        const icon = heartIcon.querySelector('i');
+        icon.classList.toggle('far'); // Toggle outlined heart
+        icon.classList.toggle('fas'); // Toggle filled heart
+        icon.classList.toggle('heart-icon'); // Toggle outlined heart
+        icon.classList.toggle('active'); // Toggle filled heart
+    });
 });
 
-    </script>
 
+
+
+</script>
+
+
+<script> // comment
+// script.js
+const commentIcon = document.getElementById('comment');
+const commentInput = document.getElementById('comment-input');
+
+commentIcon.addEventListener('click', () => {
+    commentInput.style.display = commentInput.style.display === 'none' ? 'block' : 'none';
+});
+
+
+</script>
 </body>
 </html>
