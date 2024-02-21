@@ -195,7 +195,7 @@ margin: auto 0;
 }
 .postin img{
   width: 100%;
-  max-height: 350px;
+  max-height: 375px;
   object-fit: cover;
   object-position: center;
 }
