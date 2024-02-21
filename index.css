@@ -205,7 +205,7 @@ margin: auto 0;
   border-bottom: 3px solid rgb(0, 170, 255);
   border-top: 3px solid rgb(0, 170, 255);
   justify-content: space-between;
-  padding: 5px 5px 100px 5px;
+  padding: 5px 5px 10px 5px;
 }
 .icon-set button{
 font-size: 20px;
