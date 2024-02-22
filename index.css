@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   height: 1000vh;
   width: 100%;
