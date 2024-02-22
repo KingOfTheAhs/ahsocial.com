@@ -66,7 +66,7 @@
 
 
         <div class="postin">
-        <video src="videos/Video_1.mov" controls loop playsinline preload="auto"controlslist="nodownload"></video>
+        <video src="videos/Video_1.mov" controls loop playsinline preload="metadata"controlslist="nodownload"></video>
         </div>
 
         <div class="post-text">
@@ -110,10 +110,9 @@
 
    
 
-
-        <div class="postin">
-        <video src="videos/mine.mp4" controls loop playsinline preload="auto"controlslist="nodownload"></video>
-        </div>
+     <div class="postin">
+        <img src="people/musk.png" alt="">
+      </div>
 
         <div class="post-text">
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque consequuntur natus possimus architecto soluta iure illum dolor ducimus fugit laboriosam! Non ab quisquam totam recusandae eaque aspernatur ipsam.🤔💭
@@ -141,31 +140,13 @@
     
     </div>
 
-    
-
+   
     
 </div>
 
 
 
 
-<script>
-  // Get all video elements on the page
-const video = document.querySelectorAll('video');
-
-// Set the poster for each video
-video.forEach(video => {
-    video.addEventListener('canplay', () => {
-        const canvas = document.createElement('canvas');
-        canvas.width = video.videoWidth;
-        canvas.height = video.videoHeight;
-        const ctx = canvas.getContext('2d');
-        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        video.poster = canvas.toDataURL('image/jpeg');
-    });
-});
-
-  </script>
 
     
 
