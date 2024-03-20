@@ -8,7 +8,7 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  height: 1000vh;
+  height: auto;
   width: 100%;
   /*background-color: #F3FBFF;*/
   background-color: rgb(255, 255, 255);
